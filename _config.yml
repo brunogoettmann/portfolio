@@ -1,0 +1,13 @@
+title: Bruno Curbani Goettmann
+email: bruno.goettmann@hotmail.com
+github: brunogoettmann
+linkedin: bruno-goettmann
+
+# theme: jekyll-theme-yat
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
