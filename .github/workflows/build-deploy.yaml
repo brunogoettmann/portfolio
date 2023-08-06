@@ -41,12 +41,17 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: portfolio-deploy
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Configure GitHub pages
         uses: actions/configure-pages@v3
 
-      - name: Publish artifacts
+      - name: Upload artifacts
         uses: actions/upload-pages-artifact@v2
         with:
           name: build-artifacts
-          path: ./
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
