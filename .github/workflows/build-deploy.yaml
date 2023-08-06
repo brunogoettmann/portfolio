@@ -46,14 +46,20 @@ jobs:
       name: portfolio-deploy
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download build artifacts
+        id: download
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: ${{ runner.temp }}/pages
+
       - name: Configure GitHub pages
         uses: actions/configure-pages@v3
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v2
         with:
-          name: build-artifacts
-          path: .
+          path: ${{ steps.download.outputs.page_url }}
 
       - name: Deploy
         id: deployment
