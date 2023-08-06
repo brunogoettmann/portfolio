@@ -1,0 +1,42 @@
+name: Build & Deploy - Portfolio
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Build
+        run: yarn build
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: build
+
+  deploy:
+    if: ${{ github.ref_name == 'main' || github.ref_name == 'my/bruno.goettmann/react' }}
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure GitHub pages
+        uses: actions/configure-pages@v3
+
+      - name: Deploy
+        uses: actions/upload-pages-artifact@v1
