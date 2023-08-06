@@ -36,7 +36,7 @@ jobs:
           path: build
 
   deploy:
-    if: ${{ github.ref_name == 'main' || github.ref_name == 'my/bruno.goettmann/react' }}
+    if: ${{ github.ref_name == 'main'}}
     name: Deploy
     needs: [build]
     runs-on: ubuntu-latest

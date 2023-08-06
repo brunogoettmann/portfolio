@@ -7,7 +7,7 @@ class About extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col text-center">
-              <h2>About Me 2</h2>
+              <h2>About Me</h2>
               <p>
                 Learning new things is what makes me better day by day. I'm
                 always working on a new wiser version of me. My goal is to wake
