@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Check out
@@ -20,6 +21,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Build
         run: yarn build
@@ -31,6 +35,7 @@ jobs:
           path: build
 
   deploy:
+    name: Deploy
     if: ${{ github.ref_name == 'main' || github.ref_name == 'my/bruno.goettmann/react' }}
     needs: [build]
     runs-on: ubuntu-latest
