@@ -26,8 +26,6 @@ jobs:
 
       - name: Build
         run: yarn build
-        env:
-          PUBLIC_URL: portfolio
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
