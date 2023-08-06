@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
 
 jobs:
   build:
@@ -39,6 +38,10 @@ jobs:
     name: Deploy
     needs: [build]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: portfolio-deploy
       url: ${{ steps.deployment.outputs.page_url }}
