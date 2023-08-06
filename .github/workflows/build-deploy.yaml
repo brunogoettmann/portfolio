@@ -1,0 +1,68 @@
+name: Build & Deploy - Portfolio
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+        env:
+          PUBLIC_URL: ./
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build
+
+  deploy:
+    if: ${{ github.ref_name == 'main'}}
+    name: Deploy
+    needs: [build]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: portfolio-deploy
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download build artifacts
+        id: download
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: ${{ runner.temp }}/pages
+
+      - name: Configure GitHub pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ${{ steps.download.outputs.download-path }}
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
