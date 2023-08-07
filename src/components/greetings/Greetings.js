@@ -10,7 +10,7 @@ class Greetings extends React.Component {
           <div className="col-xxl-8">
             <h1>
               Hi there! <span className="animation-wave">👋</span> - I'm
-              <span className="text-green-700"> Bruno</span>
+              <span className="text-theme"> Bruno</span>
             </h1>
             <h2 className="text-muted mt-4">
               I design simple software solutions and solve problems by coding
@@ -23,9 +23,9 @@ class Greetings extends React.Component {
         </div>
         <div className="row">
           <div className="col-xxl-8 fs-1">
-            <SocialMedia type="email" username="bruno.goettmann@hotmail.com" />
             <SocialMedia type="linkedin" username="bruno-goettmann" />
             <SocialMedia type="github" username="brunogoettmann" />
+            <SocialMedia type="email" username="bruno.goettmann@hotmail.com" />
           </div>
         </div>
       </section>

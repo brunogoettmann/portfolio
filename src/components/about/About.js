@@ -3,7 +3,7 @@ import React from "react";
 class About extends React.Component {
   render() {
     return (
-      <section className="bg-green-700 py-5">
+      <section className="bg-theme py-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col text-center">

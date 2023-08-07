@@ -1,5 +1,5 @@
 import React from "react";
-import svg from "./avatar.svg";
+import svg from "../..//styles/svgs/avatar.svg";
 
 class Avatar extends React.Component {
   render() {

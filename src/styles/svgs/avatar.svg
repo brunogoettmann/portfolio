@@ -6,7 +6,6 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>mf-avatar</title>
-    <desc>Created with Sketch.</desc>
     <defs>
     <circle id="path-1" cx="108" cy="108" r="108"></circle>
     <path
@@ -39,9 +38,9 @@
         </mask>
         <use
             id="Circle-Background"
-            fill="#0f5132"
+            fill="#084298"
             xlink:href="#path-1"></use>
-        <g id="🖍-Circle-Color" mask="url(#mask-2)" fill="#0f5132">
+        <g id="🖍-Circle-Color" mask="url(#mask-2)" fill="#084298">
             <rect
             id="🖍Color"
             x="0"

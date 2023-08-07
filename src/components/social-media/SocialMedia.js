@@ -31,7 +31,7 @@ class SocialMedia extends React.Component {
   render() {
     return (
       <a
-        className="text-green-700 p-2"
+        className="text-theme p-2"
         href={this.getAnchorAddress()}
         target="_blank"
         rel="noreferrer">
