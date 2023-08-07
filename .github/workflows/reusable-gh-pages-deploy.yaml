@@ -2,17 +2,16 @@ name: Reusable - GitHub Pages Deployment
 
 on:
   workflow_call:
-
-inputs:
-  environment:
-    type: string
-    required: true
-    description: GitHub environment associated with the deployment
-  
-  build_artifacts:
-    type: string
-    required: true
-    description: Build artifacts name
+    inputs:
+      environment:
+        type: string
+        required: true
+        description: GitHub environment associated with the deployment
+      
+      build_artifacts:
+        type: string
+        required: true
+        description: Build artifacts name
 
 permissions:
   pages: write

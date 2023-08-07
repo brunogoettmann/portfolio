@@ -2,18 +2,17 @@ name: Reusable - NodeJS Build & Test
 
 on:
   workflow_call:
+    inputs:
+      version:
+        type: string
+        default: 20.x
+        description: Node.js version required for the build
 
-inputs:
-  version:
-    type: string
-    default: 20.x
-    description: Node.js version required for the build
-
-outputs:
-  artifact_name:
-    type: string
-    value: node-artifacts
-    description: Build artifacts name
+    outputs:
+      artifact_name:
+        type: string
+        value: node-artifacts
+        description: Build artifacts name
 
 permissions:
   contents: read
