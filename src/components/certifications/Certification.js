@@ -13,7 +13,7 @@ class Certification extends React.Component {
             width="250"
             height="250"></img>
         )}
-        <div className="card-footer text-center bg-theme">
+        <div className="card-footer text-center bg-theme fw-bold">
           {this.props.title}
         </div>
       </div>

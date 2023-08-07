@@ -14,15 +14,15 @@ class Certifications extends React.Component {
           <div className="row">
             <div className="card-group">
               <Certification
-                title="AZ-400: DevOps Engineer Expert"
+                title="DevOps Engineer Expert"
                 imageSrc="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg"
               />
               <Certification
-                title="AZ-204: Azure Developer Associate"
+                title="Azure Developer Associate"
                 imageSrc="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
               />
               <Certification
-                title="AZ-900: Azure Fundamentals"
+                title="Azure Fundamentals"
                 imageSrc="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
               />
             </div>
