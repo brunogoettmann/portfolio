@@ -1,0 +1,50 @@
+name: Reusable - NodeJS Build & Test
+
+on:
+  workflow_call:
+
+inputs:
+  version:
+    type: string
+    default: 20.x
+    description: Node.js version required for the build
+
+outputs:
+  artifact_name:
+    type: string
+    value: node-artifacts
+    description: Build artifacts name
+
+permissions:
+  contents: read
+
+jobs:
+  node:
+    name: Node JS
+    runs-on: ubuntu-latest
+    steps:
+    
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.version }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+        env:
+          PUBLIC_URL: ./
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: node-artifacts
+          path: build

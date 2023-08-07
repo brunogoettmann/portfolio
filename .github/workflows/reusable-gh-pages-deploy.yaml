@@ -1,0 +1,47 @@
+name: Reusable - GitHub Pages Deployment
+
+on:
+  workflow_call:
+
+inputs:
+  environment:
+    type: string
+    required: true
+    description: GitHub environment associated with the deployment
+  
+  build_artifacts:
+    type: string
+    required: true
+    description: Build artifacts name
+
+permissions:
+  pages: write
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    name: GitHub Pages
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download build artifacts
+        id: download
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ inputs.build_artifacts }}
+          path: ${{ runner.temp }}/pages
+
+      - name: Configure GitHub pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ${{ steps.download.outputs.download-path }}
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
