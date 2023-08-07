@@ -22,7 +22,7 @@ jobs:
     uses: ./.github/workflows/reusable-codeql.yaml
   
   invoke_deploy:
-    # if: ${{ github.ref_name == 'main'}}
+    if: ${{ github.ref_name == 'main'}}
     name: Deploy
     needs: [invoke_build, invoke_codeql]
     permissions:
