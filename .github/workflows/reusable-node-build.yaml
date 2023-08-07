@@ -10,7 +10,6 @@ on:
 
     outputs:
       artifact_name:
-        type: string
         value: node-artifacts
         description: Build artifacts name
 
