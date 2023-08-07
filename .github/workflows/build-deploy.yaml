@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   invoke_build:
-    id: build
     name: Build & Test
     uses: ./.github/workflows/reusable-node-build.yaml
   
@@ -29,4 +28,4 @@ jobs:
     uses: ./.github/workflows/reusable-gh-pages-deploy.yaml
     with:
       environment: github-pages
-      build_artifacts: ${{ needs.build.artifact_name }}
+      build_artifacts: ${{ needs.invoke_build.artifact_name }}
