@@ -15,6 +15,10 @@ jobs:
   
   invoke_codeql:
     name: Scan
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
     uses: ./.github/workflows/reusable-codeql.yaml
   
   invoke_deploy:
