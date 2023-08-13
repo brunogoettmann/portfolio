@@ -1,6 +1,5 @@
 import React from "react";
-import Avatar from "../avatar/Avatar";
-import SocialMedia from "../social-media/SocialMedia";
+import { Avatar, SocialMedia } from "..";
 
 class Greetings extends React.Component {
   render() {
