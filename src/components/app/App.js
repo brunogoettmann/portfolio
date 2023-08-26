@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Certifications, Greetings, Header } from "..";
+import { About, Certifications, Greetings, Header, Skills } from "..";
 
 class App extends React.Component {
   render() {
@@ -9,6 +9,7 @@ class App extends React.Component {
         <Greetings />
         <About />
         <Certifications />
+        <Skills />
       </>
     );
   }
