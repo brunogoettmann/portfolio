@@ -11,10 +11,10 @@ class Skills extends React.Component {
           </div>
         </div>
         <div className="row mb-4">
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill name=".NET" value="100%" />
           </div>
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill
               name="Cloud Development"
               description="Microsoft Azure"
@@ -23,10 +23,10 @@ class Skills extends React.Component {
           </div>
         </div>
         <div className="row mb-4">
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill name="HTML, CSS, JavaScript" value="70%" />
           </div>
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill
               name="Containerization"
               description="Docker & Kubernetes"
@@ -35,14 +35,14 @@ class Skills extends React.Component {
           </div>
         </div>
         <div className="row mb-4">
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill
               name="Scripting"
               description="PowerShell & Bash"
               value="65%"
             />
           </div>
-          <div className="col-6">
+          <div className="col-6 p-0">
             <Skill
               name="Infrastructure as Code"
               description="Terraform & ARM templates"

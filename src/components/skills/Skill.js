@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 class Skill extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col">
             <h5 className="text-theme">{this.props.name}</h5>
           </div>
-          <div className="col text-end">
+          <div className="col text-md-end">
             <span className="text-muted ">{this.props.description}</span>
           </div>
         </div>
