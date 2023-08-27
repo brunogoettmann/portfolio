@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { Text } from "..";
+
 class Certification extends React.Component {
   render() {
     return (
@@ -14,7 +16,7 @@ class Certification extends React.Component {
             height="250"></img>
         )}
         <div className="card-footer text-center bg-theme fw-bold">
-          {this.props.title}
+          <Text localizationKey={this.props.title} />
         </div>
       </div>
     );
