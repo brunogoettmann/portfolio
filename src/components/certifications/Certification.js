@@ -22,7 +22,7 @@ class Certification extends React.Component {
 }
 
 Certification.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.object.isRequired,
   imageSrc: PropTypes.string,
 };
 

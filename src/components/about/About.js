@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Text } from "..";
+
 class About extends React.Component {
   render() {
     return (
@@ -7,20 +9,14 @@ class About extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col text-center">
-              <h2>About Me</h2>
+              <h2>
+                <Text localizationKey="ABOUT.TITLE" />
+              </h2>
               <p>
-                Learning new things is what makes me better day by day. I'm
-                always working on a new wiser version of me. My goal is to wake
-                up different everyday with new perspectives and much closer to
-                what I want. Professionally, I come to work willing to do my
-                best because I believe there is a lot to discover, teach and be
-                thought.
+                <Text localizationKey="ABOUT.FIRST_PARAGRAPH" />
               </p>
               <p>
-                Over the years I've become a passionate .NET developer with
-                focus on cloud development. With the teams I work with, I help
-                foster a left-shift culture embracing best practices and
-                processes to deliver quality code securerly.
+                <Text localizationKey="ABOUT.SECOND_PARAGRAPH" />
               </p>
             </div>
           </div>

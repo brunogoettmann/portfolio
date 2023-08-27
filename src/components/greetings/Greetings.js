@@ -1,5 +1,6 @@
 import React from "react";
-import { Avatar, SocialMedia } from "..";
+
+import { Avatar, SocialMedia, Text } from "..";
 
 class Greetings extends React.Component {
   render() {
@@ -8,12 +9,16 @@ class Greetings extends React.Component {
         <div className="row">
           <div className="col-xxl-8">
             <h1>
-              Hi there! <span className="animation-wave">👋</span> - I'm
-              <span className="text-theme"> Bruno</span>
+              <Text localizationKey="GREETINGS.SALUTATION" />
+              &nbsp;
+              <span className="animation-wave">👋</span>
+              &nbsp;-&nbsp;
+              <Text localizationKey="GREETINGS.MY_NAME_IS" />
+              &nbsp;
+              <span className="text-theme">Bruno</span>
             </h1>
             <h2 className="text-muted mt-4">
-              I design simple software solutions and solve problems by coding
-              beautiful things.
+              <Text localizationKey="GREETINGS.SUMMARY" />
             </h2>
           </div>
           <div className="col-xxl-4">

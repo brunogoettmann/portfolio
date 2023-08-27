@@ -36,9 +36,9 @@ class Skill extends React.Component {
 }
 
 Skill.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.object.isRequired,
   value: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.object,
 };
 
 export default Skill;

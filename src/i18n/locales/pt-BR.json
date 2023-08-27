@@ -1,0 +1,43 @@
+{
+    "GREETINGS": {
+        "SALUTATION": "Olá!",
+        "MY_NAME_IS": "Sou o",
+        "SUMMARY": "Desenvolvo soluções simples e resolvo problemas programando coisas bonitas."
+    },
+    "ABOUT": {
+        "TITLE": "Sobre Mim",
+        "FIRST_PARAGRAPH": "Aprender coisas novas é o que me faz crescer todos os dias. Eu estou sempre atrás de uma versão melhor de mim. Meu objetivo é acordar todos os dias diferente e mais perto do que eu busco para mim mesmo. Profissionalmente eu dou o melhor de mim porque acredito que tem muito o que descobrir, ensinar e aprender.",
+        "SECOND_PARAGRAPH": "Com o passar dos anos tenho me tornado um desenvolvedor apaixonado por .NET com foco em desenvolvimento na nuvem. Com os times que eu trabalho, busco sempre enfatizar boas praticas de desenvolvimento para entragar um produto melhor com mais qualidade e segurança."
+    },
+    "CERTIFICATIONS": {
+        "TITLE": "Certificações",
+        "AZ_900": "Azure Fundamentals",
+        "AZ_400": "DevOps Engineer Expert",
+        "AZ_204": "Azure Developer Associate"
+    },
+    "SKILLS": {
+        "TITLE": "Habilidades & Tecnologias",
+        "DOTNET": {
+            "NAME": ".NET"
+        },
+        "FRONTEND": {
+            "NAME": "HTML, CSS, JavaScript"
+        },
+        "SCRIPTING": {
+            "NAME": "Linguagem de script",
+            "DESCRIPTION": "PowerShell & Bash"
+        },
+        "CLOUD_DEVELOPMENT": {
+            "NAME": "Desenvolvimento na nuvem",
+            "DESCRIPTION": "Microsoft Azure"
+        },
+        "CONTAINERIZATION": {
+            "NAME": "Containerização",
+            "DESCRIPTION": "Docker & Kubernetes"
+        },
+        "INFRA_AS_CODE": {
+            "NAME": "Infraestrutura como código (IaC)",
+            "DESCRIPTION": "Terraform & ARM templates"
+        }
+    }
+}

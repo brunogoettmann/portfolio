@@ -1,0 +1,43 @@
+{
+    "GREETINGS": {
+        "SALUTATION": "Hi there!",
+        "MY_NAME_IS": "I'm",
+        "SUMMARY": "I design simple software solutions and solve problems by coding beautiful things."
+    },
+    "ABOUT": {
+        "TITLE": "About Me",
+        "FIRST_PARAGRAPH": "Learning new things is what makes me better day by day. I'm always working on a new wiser version of me. My goal is to wake up different everyday with new perspectives and much closer to what I want. Professionally, I come to work willing to do my best because I believe there is a lot to discover, teach and be thought.",
+        "SECOND_PARAGRAPH": "Over the years I've become a passionate .NET developer with focus on cloud development. With the teams I work with, I help foster a left-shift culture embracing best practices and processes to deliver quality code securerly."
+    },
+    "CERTIFICATIONS": {
+        "TITLE": "Certifications",
+        "AZ_900": "Azure Fundamentals",
+        "AZ_400": "DevOps Engineer Expert",
+        "AZ_204": "Azure Developer Associate"
+    },
+    "SKILLS": {
+        "TITLE": "Skills & Technologies",
+        "DOTNET": {
+            "NAME": ".NET"
+        },
+        "FRONTEND": {
+            "NAME": "HTML, CSS, JavaScript"
+        },
+        "SCRIPTING": {
+            "NAME": "Scripting",
+            "DESCRIPTION": "PowerShell & Bash"
+        },
+        "CLOUD_DEVELOPMENT": {
+            "NAME": "Cloud Development",
+            "DESCRIPTION": "Microsoft Azure"
+        },
+        "CONTAINERIZATION": {
+            "NAME": "Containerization",
+            "DESCRIPTION": "Docker & Kubernetes"
+        },
+        "INFRA_AS_CODE": {
+            "NAME": "Infrastructure as Code (IaC)",
+            "DESCRIPTION": "Terraform & ARM templates"
+        }
+    }
+}
