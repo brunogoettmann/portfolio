@@ -7,7 +7,12 @@ class Language extends React.Component {
   render() {
     return (
       <span>
-        {CONSTANTS.LANGUAGE.METADATA[this.props.code].ICON}&nbsp;
+        <img
+          width={`16px`}
+          src={CONSTANTS.LANGUAGE.METADATA[this.props.code].ICON}
+          alt="Failed to load"
+        />
+        &nbsp;
         {CONSTANTS.LANGUAGE.METADATA[this.props.code].DISPLAY_NAME}
       </span>
     );

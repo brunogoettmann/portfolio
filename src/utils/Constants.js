@@ -1,3 +1,5 @@
+import { br, uk } from "../styles/imgs/countries";
+
 export const CONSTANTS = {
   LANGUAGE: {
     DEFAULT: "en",
@@ -5,11 +7,11 @@ export const CONSTANTS = {
     PORTUGUESE_BR: "pt-BR",
     METADATA: {
       en: {
-        ICON: "🇬🇧",
+        ICON: uk,
         DISPLAY_NAME: "English",
       },
       "pt-BR": {
-        ICON: "🇧🇷",
+        ICON: br,
         DISPLAY_NAME: "Português",
       },
     },
