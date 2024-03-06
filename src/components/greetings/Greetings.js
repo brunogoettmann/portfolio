@@ -5,7 +5,7 @@ import { Avatar, SocialMedia, Text } from "..";
 class Greetings extends React.Component {
   render() {
     return (
-      <section className="container-fluid py-5 text-center">
+      <section className="container py-5 text-center">
         <div className="row">
           <div className="col-xxl-8">
             <h1>

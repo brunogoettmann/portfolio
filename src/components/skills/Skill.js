@@ -6,7 +6,7 @@ import { Text } from "..";
 class Skill extends React.Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col">
             <h5 className="text-theme">

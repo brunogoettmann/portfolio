@@ -6,7 +6,7 @@ class About extends React.Component {
   render() {
     return (
       <section className="bg-theme py-5">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col text-center">
               <h2>
