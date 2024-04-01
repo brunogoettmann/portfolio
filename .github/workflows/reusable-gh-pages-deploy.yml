@@ -34,7 +34,7 @@ jobs:
           path: ${{ runner.temp }}/pages
 
       - name: Configure GitHub pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
