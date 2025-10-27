@@ -38,7 +38,7 @@ jobs:
           PUBLIC_URL: ./
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: node-artifacts
           path: build
