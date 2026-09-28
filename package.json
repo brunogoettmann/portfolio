@@ -8,7 +8,7 @@
     "react": "^19.3.0",
     "react-dom": "^19.2.8",
     "react-i18next": "^17.0.14",
-    "sass": "^1.104.0"
+    "sass": "^1.105.0"
   },
   "scripts": {
     "start": "react-scripts start",
